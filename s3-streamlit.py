@@ -214,7 +214,7 @@ elif my_page == 'Sentiment-based recommendations':
             col2.write(f"[Link to the article]({suggestion['link']})")
 elif my_page == 'Keyword extraction':
     st.title('Tagging articles with their most relevant keywords')
-    df = pd.read_csv("data/rappler-2024-cleaned.csv").sort_values(
+    df = pd.read_csv("data/rappler-2024-cleaned-st.csv").sort_values(
         'date', ascending=False
     )
     
